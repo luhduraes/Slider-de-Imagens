@@ -2,45 +2,46 @@
 <html lang="PT-BR">
 
 <head>
+    <link rel="stylesheet" href="./styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
-    <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
-    <!-- <div class="slide-container">
-        <span id="slider-image-0"></span>
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <span id="slider-image-3"></span> -->
-    <div class="image-container">
-        <div class="images">
-            <input type="radio" name="slide" id="nascimento">
-            <input type="radio" name="slide" id="umAno">
-            <input type="radio" name="slide" id="doisAnos">
-            <input type="radio" name="slide" id="tresAnos">
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+
+            <div class="slide s1">
+                <img src="./image/1.jpg" alt="vale medieval">
+            </div>
+            <div class="slide">
+                <img src="./image/2.jpg" alt="cerejeiras">
+            </div>
+            <div class="slide">
+                <img src="./image/3.jpg" alt="capa do jogo cities skylines">
+            </div>
+            <div class="slide">
+                <img src="./image/4.jpg" alt="montanhas com cristais">
+            </div>
+            <div class="slide">
+                <img src="./image/5.jpg" alt="capa do jogo the first tree">
+            </div>
         </div>
-        <img src="../image/nascimento.jpg" class="slider-image" alt="nascimento">
-        <img src="../image/umAno.jpg" class="slider-image" alt="umAno">
-        <img src="../image/doisAnos.jpg" class="slider-image" alt="doisAnos">
-        <img src="../image/tresAnos.jpeg" class="slider-image" alt="tresAnos">
-    </div>
-    <div class="dots">
-        <label for="nascimento"></label>
-        <label for="umAno"></label>
-        <label for="doisAnos"></label>
-        <label for="tresAnos"></label>
-
-    </div>
-
-    <!-- <div class="button-container">
-            <a href="#slider-image-0" class="slider-button"></a>
-            <a href="#slider-image-1" class="slider-button"></a>
-            <a href="#slider-image-2" class="slider-button"></a>
-            <a href="#slider-image-3" class="slider-button"></a>
-        </div> -->
+        <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+            <label class="bar" for="slide5"></label>
+        </div>
     </div>
 </body>
 
